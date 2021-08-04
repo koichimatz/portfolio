@@ -1,34 +1,37 @@
-# DMM英会話プラス
+# マンション管理組合アプリ
+
 ## サイト概要
-DMM英会話ユーザーがより快適に、効率よく学習する手助けをするサイトです。
+マンションの管理組合運営を円滑にするHPを簡単に作成できるサイト。PTAなどの組合活動でも利用が可能。
 
 ### サイトテーマ
-DMM英会話でこんな機能あったらいいなを実現するサイト
+- マンション管理組合活動のベースとしてのWebサイト構築アプリ。マンション毎に設置が可能で、マンション住民へのお知らせやコミュニティ運営を通じた資産価値の維持向上につなげる
+- マンション購入希望者にとって必要な施設情報や写真などを掲載することでスムーズな売買に貢献する
+- GoogleCalendarやLINE chatbox などのランニングコストなしで使えるAPIツールとの連携で基本サーバー料金以外は無料での運用が可能
 
 ### テーマを選んだ理由
-自分自身がDMM英会話のヘビーユーザーで、レッスン時間の登録にGASを使ってレッスン予約を自動でGoogleCalendarに同期して使っている。この機能はユーザーの多くが使いたいと思う機能だと思うが、GASを導入するというのは多くの人にとってハードルが高い。この機能以外にも他にもこんな機能があればもっと便利というアイディアがあったのでそれらを簡単に使えるためのサイト製作をテーマとした。
+自分自身が大規模マンション管理組合の理事長をやっているのですが、老若男女様々な方が住み、スマホを所有しない方もいらっしゃる中で、マンションとして公式サイトを持つ必要性を感じていました。
+ポートフォリオづくりの成果物を自分自身が居住しているマンション管理組合だけでなく、組合という共通点で、アナログな運用に辟易としている子供のPTA活動にも応用できれば、運用フェーズまでの経験と、自分の身の回りの人も快適にできるのでは、という思いから本テーマを選定しました。
+
 ### ターゲットユーザ
-DMM英会話のユーザー全て
+1. マンション住民(特に理事会の理事)
+2. マンション以外の組合活動の従事者(PTAなど)
 
 ### 主な利用シーン
-1. レッスン予約していた時間を忘れてしまう→GoogleCal連携
-2. DMMのレッスンノートをもっと活用したい→レッスンノートメール送信機能
-3. DMM英会話のレッスン履歴を月別に可視化してモチベーションをあげたい→カレンダー表示機能
-4. レッスンノートの内容をまとめて表示し活用しやすく
-5. 発展:DMM英会話ユーザー同士で繋がる、競い合う
+マンション単体でホームページを簡単に持つことで、掲示板などのアナログな手法の置き換えやマンションコミュニティ運営、問合せ窓口などができ管理組合の運用を効率化できます。
+また、マンションの購入検討層からはホームページがあると、マンションの共用施設等を用意に確認、検討できるだけでなく、理事会が機能しているというアピールにもなるため、資産価値の維持、向上にもつなげます。
 
 ## 設計書
-<...>
-
-## 参考
-[DMM英会話の予定をGoogleカレンダーに自動登録する方法](https://www.cg-method.com/life/dmm-eikaiwa-google-calendar/)
-[スクレイピング](https://tech-camp.in/note/technology/48812/)
-	http://nokogiri.org/
-https://qiita.com/katsuyuki/items/1a78360988d96eec1d54
-https://qiita.com/mmmm/items/545e0aec82e6949ebb0a
+[WBS](https://docs.google.com/spreadsheets/d/1JFNO62Cp5CzN4UX4s-RsGyBiht46DKCIcXqtK0X3rYo/edit?usp=sharing)
 ## チャレンジ要素一覧
-<https://docs.google.com/spreadsheets/d/14hjbKu8GXgWfNYsE13ZXtjElVOSodwy2kRKpWxsdSfg/edit?usp=sharing>
+https://docs.google.com/spreadsheets/d/14hjbKu8GXgWfNYsE13ZXtjElVOSodwy2kRKpWxsdSfg/edit?usp=sharing
 
+## 参考サイト
+- [カテリーナ三田タワースイート](https://www.catherina-mita.com/project/)
+	- https://kawlu.com/journal/2019/01/21/73193/
+- [ブリリアマーレ有明](https://bma33.com/)
+- [管理組合が自分たちのマンションを売り出すための外向けホームページとは？](https://www.sumu-log.com/archives/27992/) 
+- [クラセル](https://www.innovelios.com/)
+- [マンボー](https://mansion-board.com/)
 ## 開発環境
 - OS：Linux(CentOS)
 - 言語：HTML,CSS,JavaScript,Ruby,SQL
@@ -36,23 +39,6 @@ https://qiita.com/mmmm/items/545e0aec82e6949ebb0a
 - JSライブラリ：jQuery
 - IDE：Cloud9
 
-## 最終的に組み込みたい技術
-
--   フロントエンド
-    -   HTML/CSS
-    -   Javascript
-    -   Vue.js
--   バックエンド
-    -   Ruby 
-    -   Ruby on Rails
-    -   Rubocop（コード解析ツール)
-    -   Rspec（テスト)
--   インフラ
-    -   Docker / Docker-compose
-    -   AWS (EC2 / RDS(MySQL) / S3 / VPC / IAM / Route53 / ACM / ALB / Cloudfront)
-    -   CircleCI (CI/CD)
-    -   MySQL / Puma / Nginx
-    - 
 ## 使用素材
 - 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
 - 使用しない場合は、使用素材の項目をREADMEから削除してください。
